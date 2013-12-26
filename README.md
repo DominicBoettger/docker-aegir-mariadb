@@ -40,3 +40,6 @@ docker run -d -v /var/docker/aegir01/usr/share/solr4:/usr/share/solr4 -v /var/do
 
 I added the Solr search engine to the container. In my configuration there are two running core with the latest schema version of search Search API Solr search (https://drupal.org/project/search_api_solr)
 
+### Additional information
+
+I wrote a little article on our website about the creation of the Dockerfile and where i failed with some expectations about Docker. The article can be found on http://inspirationlabs.com/blog/docker-and-aegir-hosting-system.
