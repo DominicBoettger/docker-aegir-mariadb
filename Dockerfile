@@ -24,7 +24,7 @@ RUN apt-get update
 
 ADD dpkg_selection.conf /tmp/dpkg_selection.conf
 
-RUN LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get -y install openssh-server supervisor apache2 php5 php5-cli php5-gd php5-mysql php-pear sudo rsync git-core unzip mariadb-server
+RUN LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get -y install openssh-server supervisor apache2 php5 php5-cli php5-gd php5-mysql php-pear sudo rsync git-core unzip mariadb-server syslog-ng
 
 # allow access from any IP
 RUN sed -i '/^bind-address*/ s/127.0.0.1/0.0.0.0/' /etc/mysql/my.cnf

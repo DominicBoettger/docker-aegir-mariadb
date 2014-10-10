@@ -101,3 +101,5 @@ mysqladmin -p$MYSQL_ROOT_PW shutdown
 #DPKG_DEBUG=developer apt-get -y install aegir2
 echo "Starting supervisor:"
 supervisord -c /opt/supervisor.conf -n
+/etc/init.d/postfix restart
+service syslog-ng start
